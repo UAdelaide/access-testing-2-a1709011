@@ -35,7 +35,7 @@
                 };
             },
             async mounted() {
-
+                
             },
             methods: {
                 async sendMessage() {
@@ -47,7 +47,8 @@
                         headers: { 'Content-Type': 'application/json'},
                         body: JSON.stringify({ bookID: this.selectedItem.BookID, sellerID: this.selectedItem.SellerID, message: this.selectedItem.messageText })
                     });
-                    alert('Message sent!')
+                    alert('Message sent!');
+                    this.messageText='';
                 }
             }
         }).mount('#app');
