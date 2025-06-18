@@ -11,7 +11,7 @@ router.get('/items', async function(req, res, next) {
     const [rows] = await db.query(`
         SELECT bl.BookID, b.Title, bl.SellerID, u.Name AS SellerName
         FROM BookListings bl
-        JOIN BookInfo b ON 
+        JOIN BookInfo b ON bl.BookInfoID = 
     `);
 });
 
