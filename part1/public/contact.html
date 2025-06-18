@@ -39,7 +39,7 @@
                 this.items = await itemsRes.json();
 
                 const messagesRes = await fetch('/api/messages');
-                this.me
+                this.messages = await messagesRes.json();
             },
             methods: {
                 async sendMessage() {
