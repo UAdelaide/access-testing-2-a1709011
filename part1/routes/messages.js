@@ -24,7 +24,7 @@ router.post('/message', async function(req, res, next) {
         VALUES (?, ?, ?, ?, NOW())
     `, [CURRENT_BUYER_ID, sellerID, bookID, message]);
 
-    res.status(201).json({ message: })
+    res.status(201).json({ message: 'Message sent' });
 });
 
 module.exports = router;
