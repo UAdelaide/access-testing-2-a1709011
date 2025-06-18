@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/items', async function(req, res, next) {
     const [rows] = await db.query(`
-        SELECT bl.BookID, b.Title, bl.SellerID
+        SELECT bl.BookID, b.Title, bl.SellerID, u.Name AS SellerName
     `);
 });
 
