@@ -8,7 +8,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/items', async function(req, res, next) {
-    const [rows] = await db.query()
+    const [rows] = await db.query(`
+        
+        `)
 })
 
 module.exports = router;
