@@ -42,7 +42,7 @@
                     if(!this.selectedItem.BookID || !this.messageText) {
                         return alert('Please select a book and enter a message.');
                     }
-
+                    await fetch('/api/messages')
                 }
             }
         }).mount('#app');
