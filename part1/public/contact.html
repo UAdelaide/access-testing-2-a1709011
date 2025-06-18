@@ -43,7 +43,8 @@
                         return alert('Please select a book and enter a message.');
                     }
                     await fetch('/api/messages', {
-                        method: 'po'
+                        method: 'POST',
+                        headers: { 'content'}
                     });
                 }
             }
