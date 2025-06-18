@@ -36,7 +36,9 @@
             },
             async mounted() {
                 const itemsRes = await fetch('/api/items');
-                this.items = await itemsRes
+                this.items = await itemsRes.json();
+
+                const messagesRes
             },
             methods: {
                 async sendMessage() {
