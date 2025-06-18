@@ -20,7 +20,8 @@ router.get('/items', async function(req, res, next) {
 router.post('/message', async function(req, res, next) {
     const { bookID, sellerID, message } = req.body;
     await db.query(`
-        INSERT INTO Messages (BuyerID, SellerID, BookID, MessageText, )
+        INSERT INTO Messages (BuyerID, SellerID, BookID, MessageText, SentAt)
+        
     `)
 });
 
