@@ -1,3 +1,3 @@
 const mysql = require('mysql2');
 
-const db = mysql.createP
+const db = mysql.createPool
