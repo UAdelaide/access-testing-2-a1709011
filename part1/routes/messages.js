@@ -12,7 +12,7 @@ router.get('/items', async function(req, res, next) {
         SELECT bl.BookID, b.Title, bl.SellerID, u.Name AS SellerName
         FROM BookListings bl
         JOIN BookInfo b ON bl.BookInfoID = b.BookInfoID
-        JOIN U
+        JOIN Users u ON bl.
     `);
 });
 
