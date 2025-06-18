@@ -14,8 +14,8 @@
         <label>--Choose a Book--</label>
         <select v-model="selectedItem">
             <option disabled value="">--Select a book--</option>
-            <option v-for="item in items" :key>
-
+            <option v-for="item in items" :key="item">
+                {{ item.Title }}
             </option>
         </select>
     </div>
