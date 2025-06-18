@@ -34,8 +34,9 @@
             methods: {
                 async sendMessage() {
                     if(!this.selectedItem.BookID || !this.messageText) {
-                        return alert('Please select a book and enter a message')
+                        return alert('Please select a book and enter a message.');
                     }
+                    
                 }
             }
         }).mount('#app');
