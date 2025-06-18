@@ -18,7 +18,7 @@ router.get('/items', async function(req, res, next) {
 });
 
 router.post('/message', function(req, res, next) {
-    const { bookID}
+    const { bookID, sellerID, message } = req.body;
 });
 
 module.exports = router;
