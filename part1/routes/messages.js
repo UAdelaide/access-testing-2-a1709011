@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/items', function(req, res, next) {
-    
+    const [rows] = 
 })
 
 module.exports = router;
