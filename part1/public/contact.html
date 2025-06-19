@@ -65,7 +65,7 @@
                     await fetch('/api/messages', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json'},
-                        body: JSON.stringify({ bookID: this.selectedItem.BookID, sellerID: this.selectedItem.SellerID, message: this.selectedItem.messageText })
+                        body: JSON.stringify({ bookID: this.selectedItem.BookID, sellerID: this.selectedItem.SellerID, message: this.messageText })
                     });
                     alert('Message sent!');
                     this.messageText='';
