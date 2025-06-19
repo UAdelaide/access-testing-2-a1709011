@@ -84,7 +84,7 @@
             <h1>Contact Seller</h1>
             <span>Logged in as: <br><strong>{{ currentUserName }}</strong></span>
         </div>
-        <label>--Choose a Book--</label>
+        <label for>--Choose a Book--</label>
         <select v-model="selectedItem">
             <option disabled value="">--Select a book--</option>
             <option v-for="item in items" :value="item">
