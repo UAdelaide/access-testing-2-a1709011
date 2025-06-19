@@ -26,7 +26,7 @@ router.get('/messages', async function(req, res, next) {
     JOIN BookListings bl ON m.BookID = bl.BookID
     JOIN BookInfo bi ON bl.BookInfoID = bi.BookInfoID
     JOIN Users u ON m.BuyerID = u.UserID
-    WHERE m.BuyerID = ?
+    WHERE m.SellerID = ?
     ORDER BY m.SentAt DESC
   `, [CURRENT_BUYER_ID]);
   res.json(rows);
