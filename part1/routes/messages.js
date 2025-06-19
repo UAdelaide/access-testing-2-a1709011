@@ -3,6 +3,7 @@ var router = express.Router();
 var db = require('../db');
 
 var CURRENT_BUYER_ID = 1;
+var CURRENT
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
