@@ -19,7 +19,7 @@ router.get('/items', async function(req, res, next) {
     res.json(rows);
 });
 
-router.get('/messages', async function(req, res) => {
+router.get('/messages', async function(req, res) {
   const [rows] = await db.query(`
     SELECT m.MessageText, m.SentAt, bi.Title, u.Name AS BuyerName
     FROM Messages m
